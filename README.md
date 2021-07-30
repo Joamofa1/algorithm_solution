@@ -9,6 +9,9 @@ This is a Computer Vision Application that counts the number of people entering 
 As required, we had to train the model on the videos that were provided.
 This people counter implementation uses object detection at fixed frame intervals and use object tracking the rest of the time. The whole project is implemented in Pyton 3.
 
+[Download training dataset here](https://drive.google.com/file/d/1LpdHUv5fx4Lbaa_CqMGGeokAZ29neekH/view?usp=sharing)
+
+
 ## Object Detection
 	
 The object detection is done by using YOLO_v3 implemented with openCV2. Normally Yolo v3 is very fast when implemented through darknet, and gives approx. 30fps, but when implemented using opencv it goes down to a mere 3-5fps. Hence object tracking has been added to speed things up a bit.
