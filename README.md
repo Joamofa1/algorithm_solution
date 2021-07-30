@@ -7,7 +7,7 @@ This is a Computer Vision Application that counts the number of people entering 
 
 ## How did we solve this?
 As required, we had to train the model on the videos that were provided.
-This people counter implementation uses object detection at fixed frame intervals and use object tracking the rest of the time. The whole thing is implemented in Pyton 3.
+This people counter implementation uses object detection at fixed frame intervals and use object tracking the rest of the time. The whole project is implemented in Pyton 3.
 
 ## Object Detection
 	
