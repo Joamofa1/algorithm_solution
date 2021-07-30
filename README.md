@@ -1,6 +1,6 @@
 # People Counter Solution
 
-This is a Computer Vision Application that counts the number of people entering and exiting a building in realtime.
+This is a Computer Vision Application that counts the number of people entering and exiting a building.
 
 ![Demo](/demo/Demo.gif)
 
