@@ -34,9 +34,9 @@ In order to have the code up and running, the following need to be installed
 
 # After all libraries are installed,the code can now be run.
 ##### Run the code below to input a video
-    python3 counter.py --video [full path of the video file]
+    python counter.py --video [full path of the video file]
 ##### If you want to use web cam : 
-    python3 head_count.py  
+    python head_count.py  
 
 
 	
