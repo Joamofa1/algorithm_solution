@@ -32,14 +32,9 @@ In order to have the code up and running, the following need to be installed
     pip install -r requirements.txt
     
 
-##### And then download yolov3 weights file to model folder. Link is given below:
-  https://pjreddie.com/media/files/yolov3.weights 
-
 # After all libraries are installed,the code can now be run.
 ##### Run the code below to input a video
     python3 counter.py --video [full path of the video file]
-##### If you want to input an image : 
-    python3 head_count.py --image [full_path_of_image_file] 
 ##### If you want to use web cam : 
     python3 head_count.py  
 
