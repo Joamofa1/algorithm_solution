@@ -21,13 +21,13 @@ Object tracking here is done using dlib library which keeps track of the objects
 ## What you need
 	
 In order to have the code up and running, the following need to be installed
-	- OpenCV2
-	- numpy
-	- scipy
-	- dlib
-	- imutils
-	- pandas
-	- cmake
+- OpenCV2
+- numpy
+- scipy
+- dlib
+- imutils
+- pandas
+- cmake
 ##### This can be done by running the command below since all requirements have been added to a requirements.txt file
     pip install -r requirements.txt
     
