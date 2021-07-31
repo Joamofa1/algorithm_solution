@@ -1,14 +1,15 @@
-# People Counter Solution
+# People Counter Solution by Team Algorithm
 
-This is a Computer Vision Application that counts the number of people entering and exiting a building.
+This is a Computer Vision Application that counts the number of people entering and exiting a large commercial establishment.
+We have developed just the Software Solution for this particular Challenge.
 
 ![Demo](/demo/Demo.gif)
 
 
 ## How did we solve this?
-As required, we had to train the model on the videos that were provided. Sample images were also obtained from [here](https://drive.google.com/file/d/1LpdHUv5fx4Lbaa_CqMGGeokAZ29neekH/view?usp=sharing)
+As required, we had to train the model on the videos that were provided. Sample images were also obtained from [here](https://drive.google.com/file/d/1LpdHUv5fx4Lbaa_CqMGGeokAZ29neekH/view?usp=sharing) to further train the model.
 This people counter implementation uses object detection at fixed frame intervals and uses object tracking the rest of the time. The whole project is implemented in Pyton 3.
-A more detailed way of how we solved this problem would be stated in the report
+
 
 
 
@@ -39,7 +40,7 @@ In order to have the code up and running, the following need to be installed
 ##### Run the code below to input a video
     python counter.py --video [full path of the video file]
 ###### Below is an example of running the code with a local video
-    python counter.py --video videos/1.avi
+    python counter.py --video videos/10.avi
 ##### If you want to use web cam : 
     python counter.py  
 
