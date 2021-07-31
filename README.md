@@ -41,7 +41,7 @@ In order to have the code up and running, the following need to be installed
 ###### Below is an example of running the code with a local video
     python counter.py --video videos/1.avi
 ##### If you want to use web cam : 
-    python head_count.py  
+    python counter.py  
 
 
 	
