@@ -14,16 +14,15 @@ from tracking.centroidtracker import CentroidTracker
 from tracking.trackableobject import TrackableObject
 
 # Initialize the parameters
-confThreshold = 0.3  #Confidence threshold
-nmsThreshold = 0.2   #Non-maximum suppression threshold
+confThreshold = 0.4 #Confidence threshold
+nmsThreshold = 0.6  #Non-maximum suppression threshold
 inpWidth = 416       #Width of network's input image
 inpHeight = 416      #Height of network's input image
-skip_frames = 15     #No. of frames skipped for next detection
 
 # construct the argument parse and parse the arguments
 parser = argparse.ArgumentParser(description='Object Detection and Tracking using YOLO in OPENCV')
 parser.add_argument("-v",'--video', help='Path to video file.')
-parser.add_argument("-s", "--skip_frames", type=int, default=5,
+parser.add_argument("-s", "--skip_frames", type=int, default=15,
     help="# of skip frames between detections")
 args = parser.parse_args()
         
@@ -92,8 +91,6 @@ def MarkPeople(objects, total, totalEntering, totalLeaving):
                     totalEntering += 1
                     to.counted = True
 
-                # total+=1
-                # to.counted = True
 
         # store the trackable object in our dictionary
         trackableObjects[objectID] = to
@@ -188,7 +185,7 @@ writer = None
 # instantiate our centroid tracker, then initialize a list to store
 # each of our dlib correlation trackers, followed by a dictionary to
 # map each unique object ID to a TrackableObject
-ct = CentroidTracker(maxDisappeared=20, maxDistance=40)
+ct = CentroidTracker(maxDisappeared=40, maxDistance=30)
 trackers = []
 trackableObjects = {}
 total = 0
@@ -314,7 +311,7 @@ output = output.append(new_data, ignore_index=True)
 output = output.append(new_data2, ignore_index=True)
 
 
-output.to_csv('output.csv')
+output.to_csv('output.csv', index=False)
 
 # stop the timer and display FPS information
 fps.stop()
