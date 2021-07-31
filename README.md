@@ -1,13 +1,16 @@
 # People Counter Solution
 
-This is a Computer Vision Application that counts the number of people entering and exiting a building in realtime.
+This is a Computer Vision Application that counts the number of people entering and exiting a building.
 
 ![Demo](/demo/Demo.gif)
 
 
 ## How did we solve this?
 As required, we had to train the model on the videos that were provided.
-This people counter implementation uses object detection at fixed frame intervals and use object tracking the rest of the time. The whole thing is implemented in Pyton 3.
+This people counter implementation uses object detection at fixed frame intervals and use object tracking the rest of the time. The whole project is implemented in Pyton 3.
+
+[Download training dataset here](https://drive.google.com/file/d/1LpdHUv5fx4Lbaa_CqMGGeokAZ29neekH/view?usp=sharing)
+
 
 ## Object Detection
 	
@@ -21,27 +24,22 @@ Object tracking here is done using dlib library which keeps track of the objects
 ## What you need
 	
 In order to have the code up and running, the following need to be installed
-	1. OpenCV2
-	2. numpy
-	3. scipy
-	4. dlib
-	5. imutils
-	6. pandas
-	7. cmake
+- OpenCV2
+- numpy
+- scipy
+- dlib
+- imutils
+- pandas
+- cmake
 ##### This can be done by running the command below since all requirements have been added to a requirements.txt file
     pip install -r requirements.txt
     
 
-##### And then download yolov3 weights file to model folder. Link is given below:
-  https://pjreddie.com/media/files/yolov3.weights 
-
 # After all libraries are installed,the code can now be run.
 ##### Run the code below to input a video
-    python3 head_count.py --video [full path of the video file]
-##### If you want to input an image : 
-    python3 head_count.py --image [full_path_of_image_file] 
+    python counter.py --video [full path of the video file]
 ##### If you want to use web cam : 
-    python3 head_count.py  
+    python head_count.py  
 
 
 	
