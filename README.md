@@ -38,7 +38,7 @@ In order to have the code up and running, the following need to be installed
 # After all libraries are installed,the code can now be run.
 ##### Run the code below to input a video
     python counter.py --video [full path of the video file]
-Below is an example of running the code with a local video
+###### Below is an example of running the code with a local video
     python counter.py --video videos/1.avi
 ##### If you want to use web cam : 
     python head_count.py  
