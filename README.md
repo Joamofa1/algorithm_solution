@@ -21,7 +21,7 @@ This people counter implementation uses object detection at fixed frame interval
 
 ## Object Detection
 	
-The object detection is done by using YOLO_v3 implemented with openCV2. Normally Yolo v3 is very fast when implemented through darknet (Approximately 30fps), but when implemented using opencv it goes down to a mere 3-5fps. Hence object tracking has been added to speed things up a bit.
+The object detection is done by using YOLO_v3 implemented with openCV2. Normally Yolo v3 is very fast when implemented through darknet (Approximately over 30fps), but when implemented using opencv it goes down to a mere 3-5fps. Hence object tracking has been added to speed things up a bit.
 
 ## Object Tracking
 	
